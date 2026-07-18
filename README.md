@@ -15,9 +15,7 @@ L'objectif est de comparer les performances des deux méthodes pour résoudre un
 ## Modélisation mathématique
 
 On considère un problème de conduction thermique stationnaire dans un domaine carré
-$$
-\Omega=(0,1)\times(0,1)\subset\mathbb{R}^{2}.
-$$.
+$\Omega=(0,1)\times(0,1)\subset\mathbb{R}^{2}$.
 
 Le problème étudié est
 
