@@ -20,13 +20,16 @@ On considère un problème de conduction thermique stationnaire dans un domaine 
 Le problème étudié est
 
 $$
-\begin{cases}
--\nabla \cdot \left(k(x,y)\nabla u\right)=1000, & \text{dans } \Omega,\\[6pt]
-u=0, & \text{sur } \partial\Omega.
-\end{cases}
+-\nabla \cdot \left(k(x,y)\nabla u\right)=1000,
+\qquad \text{dans } \Omega,
 $$
 
-où $\(u(x,y)\)$ désigne la température.
+avec les conditions aux limites de Dirichlet homogènes
+
+$$
+u=0,
+\qquad \text{sur } \partial\Omega.
+$$
 
 Ce problème est **linéaire**, car l'inconnue \(u\) et son gradient apparaissent de manière linéaire dans l'équation. L'existence et l'unicité de la solution faible sont établies à l'aide du **théorème de Lax–Milgram**, après formulation faible du problème.
 
