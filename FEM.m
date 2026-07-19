@@ -104,15 +104,13 @@ max(U)
 
 %% --- EXPORTATION DES DONNÉES DIRECTES EN CSV ---
 
-% 1. استخراج إحداثيات X و Y من مصفوفة nodes اللي عندك ف الكود
 X_nodes = nodes(:, 1);
 Y_nodes = nodes(:, 2);
 
-% 2. جمع الإحداثيات والحل U ف جدول واحد (Table)
-% (ملاحظة: U خاص يكون عمود، إيلا كان سطر كدير ليه U')
+
 csv_table = table(X_nodes, Y_nodes, U, 'VariableNames', {'X', 'Y', 'U_matlab'});
 
-% 3. كتابة الجدول ف ملف CSV
+
 writetable(csv_table, 'solution_matlab_direct.csv');
 
 disp('¡ Fichier "solution_matlab_direct.csv" créé avec succès !');
